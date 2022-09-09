@@ -1,0 +1,103 @@
+img{
+    height: 200px;
+    width: 200px;
+}
+body{
+    background: rgb(245,247,247);
+background: linear-gradient(90deg, rgba(245,247,247,1) 0%, rgba(216,221,28,1) 0%, rgba(211,93,217,1) 66%); 
+}
+h1{
+    text-align: center;
+	font-weight: bold;
+	color: #c52e6a;
+} 
+h2{
+    text-align: center;
+    color: #f5ed11;
+}
+p{
+    color: #5f0547;
+}
+ul{
+    color: #e63a13;
+}
+.divBoisson{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btninput{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+button {
+    margin: 10px;
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    max-height: 50px;
+    max-width: 200px;
+   }
+   
+   button::after {
+    text-align: center;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+   
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+
+   input {
+    margin: 10px;
+    background-color: #eee;
+    border: none;
+    font-size: 1rem;
+    max-width: 12em;
+    max-height: 2em;
+    border-radius: 1rem;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+   }
+   
+  input:focus {
+    outline-color: lightcoral;
+   }
